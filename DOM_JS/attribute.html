@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        DOM Javascript
+    </title>
+    <style>
+    .red{
+        background:red;
+    }
+
+    .border{
+        border: 2px solid green;
+    }
+    </style>
+</head>
+<body>
+    <h1>Belajar DOM Javascript</h1>
+    <img src="coffeescript.jpg" height=150 id=pic>
+
+    <input type="text" value="nama_bagus" id="input" class="border ">
+    <input type="submit" id="nama_bagus">
+    <p1 id="span" ></p1>
+    <script>
+        var pic = document.getElementById('pic');
+        var input = document.getElementById('input');
+        var submit = document.getElementById('nama_bagus');
+        pic.height = 200;
+        pic.width = 500;
+
+        input.value = "nama";
+
+        // input.setAttribute('class', 'red');
+        input.className += 'red';
+        pic.className += 'border';
+
+        input.addEventListener('mouseenter', function(){
+            input.style.background = 'yellow';
+        });
+
+        input.addEventListener('mouseleave', function(){
+            input.style.background = 'red';
+        });
+
+        function click(){
+            // input.style.background = 'blue';
+            // pic.style.border = '2px solid blue';
+            var text = input.value;
+            span.innerHTML = text;
+        }
+
+        // input.addEventListener('click', function() {click()});
+        // input.addEventListener('click',click);
+        submit.onclick = click;
+
+
+
+    </script>
+
+</body>
+
+</html>

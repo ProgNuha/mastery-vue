@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        DOM Javascript
+    </title>
+</head>
+<body>
+    <h1>
+        Belajar DOM Javascript
+    </h1>
+
+    <div id="box">
+        <div id="p1">Paragraf 1</div>
+    </div>
+
+    <script>
+        var el = document.createElement('h3');
+        var text = document.createTextNode('Mufida Nuha Salimah');
+        var box1 = document.getElementById('box');
+
+        el.appendChild(text);
+        box.appendChild(el);
+
+        // box.removeChild(el);
+
+        var el_p = document.createElement('h2');
+        var p = document.createTextNode('171511050');
+        var p1 = document.getElementById('p1');
+
+        el_p.appendChild(p);
+        box.replaceChild(el_p,p1);
+        
+    </script>
+
+</body>
+
+</html>
