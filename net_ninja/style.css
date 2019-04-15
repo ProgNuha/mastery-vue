@@ -1,0 +1,13 @@
+.nav-bar {
+  background: linear-gradient(-90deg, #84CF6A, #16C0B0);
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+#canvas{
+  width:100px;
+  height:100px;
+  padding: 50px;
+  border: solid 1px #84CF6A;
+  text-align: center; 
+}
