@@ -13,17 +13,36 @@
 
 <script>
 export default {
-  props:{
-    nakamas:{
-        type: Array,
-        required: true
-    }
-  },
-  methods:{
-      deleteNakama: function(){
-        this.nakamas.pop()
-      }
-  } 
+    props:{
+        nakamas:{
+            type: Array,
+            required: true
+        }
+    },
+    methods:{
+        deleteNakama: function(){
+            this.nakamas.pop()
+        }
+    }, 
+    //lifecycle hooks//
+    // beforeCreate(){
+    //     alert('beforeCreate');
+    // },
+    // created(){
+    //   alert('created');
+    // },
+    // beforeMount(){
+    //     alert('beforeMount');
+    // },
+    // mounted(){
+    //     alert('mounted');
+    // },
+    // beforeUpdate(){
+    //     alert('beforeUpdate');
+    // },
+    // updated(){
+    //     alert('updated');
+    // }
 }
 </script>
 
